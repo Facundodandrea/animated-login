@@ -48,6 +48,7 @@ function playBlurSequence(inputType) {
 
 // Maneja el evento de focus en email
 emailInput.addEventListener('focus', () => {
+    currentImageIndex = 0;
     clearInterval(blurSequenceInterval);
     playFocusSequence('email');
 });
@@ -73,12 +74,14 @@ emailInput.addEventListener('blur', () => {
 
 // Maneja el evento de focus en password
 passwordInput.addEventListener('focus', () => {
+    currentImageIndex = 0;
     clearInterval(blurSequenceInterval);
     playFocusSequence('password');
 });
 
 // Maneja el evento de blur en password
 passwordInput.addEventListener('blur', () => {
+    
     playBlurSequence('password');
 });
 
