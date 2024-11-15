@@ -1,0 +1,78 @@
+/* Estilo para centrar el contenido en la pantalla */
+html, body {
+    height: 100%; /* Aseguramos que el body ocupe toda la altura de la pantalla */
+    margin: 0; /* Eliminamos márgenes predeterminados */
+    display: flex; /* Usamos Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #f0f0f0; /* Fondo claro para la página */
+    font-family: sans-serif;
+}
+
+.form-container {
+    text-align: center; /* Asegura que los elementos dentro del contenedor estén centrados */
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
+    width: 300px; /* Ancho fijo para el formulario */
+}
+
+.image-container {
+    margin-bottom: 20px; /* Espacio entre la imagen y el formulario */
+    width: 100%; /* Ancho 100% para que la imagen ocupe todo el contenedor */
+    height: 300px; /* Alto fijo para la imagen */
+    position: relative; /* Asegura que la imagen se coloque correctamente */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+
+.input-container {
+    margin-bottom: 15px; /* Espacio entre los inputs */
+    text-align: left; /* Alineamos los labels e inputs a la izquierda */
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* El ancho de los inputs será del 100% del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del input */
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline-color: #a4b863; /* Cambia el color del borde cuando el input está enfocado */
+    border-color: #a4b863;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #cce08b;
+    color: rgb(40, 40, 40);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del botón */
+}
+
+button:hover {
+    background-color: #a4b863; /* Cambia el color del botón cuando se pasa el mouse por encima */
+}
